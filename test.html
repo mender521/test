@@ -17,15 +17,10 @@
     </div>
   </body>
   <script>
-    // const queryString = window.location.search;
-    let url = new URL(
-      "https://yourwebsite.github.io/?key1=name&key2=name@email.com"
-    );
+    let url = new URL(window.location.href);
     const urlParams = new URLSearchParams(url.searchParams);
     let key1Value = urlParams.get("key1");
-    console.log(key1Value, "+++++++++++++");
     let key2Value = urlParams.get("key2");
-    console.log(key2Value, "------------");
     btnClick.onclick = function () {
       document.getElementById("key1").innerHTML = key1Value;
       document.getElementById("key2").innerHTML = key2Value;
