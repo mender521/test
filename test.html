@@ -42,30 +42,12 @@
   ></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <script>
-<<<<<<< HEAD
-    let url = new URL(
-      "https://yourwebsite.github.io/?key1=name&key2=name@email.com"
-    );
-    // let url = new URL(window.location.href);
-
-=======
     let url = new URL(window.location.href);
->>>>>>> 999716cadd547cca480dd27ea54ab64c31a7cffd
     const urlParams = new URLSearchParams(url.searchParams);
     let key1Value = urlParams.get("key1");
     let key2Value = urlParams.get("key2");
-<<<<<<< HEAD
-    console.log(key2Value, "------------");
     document.getElementById("key1").innerHTML = key1Value;
     document.getElementById("key2").innerHTML = key2Value;
-=======
-    document.getElementById("key1").innerHTML = key1Value;
-      document.getElementById("key2").innerHTML = key2Value;
-    btnClick.onclick = function () {
-      document.getElementById("key1").innerHTML = key1Value;
-      document.getElementById("key2").innerHTML = key2Value;
-    };
->>>>>>> 999716cadd547cca480dd27ea54ab64c31a7cffd
   </script>
   <script type="text/javascript">
     (function (a, b, c, d, e, f, g) {
