@@ -21,6 +21,8 @@
     const urlParams = new URLSearchParams(url.searchParams);
     let key1Value = urlParams.get("key1");
     let key2Value = urlParams.get("key2");
+    document.getElementById("key1").innerHTML = key1Value;
+      document.getElementById("key2").innerHTML = key2Value;
     btnClick.onclick = function () {
       document.getElementById("key1").innerHTML = key1Value;
       document.getElementById("key2").innerHTML = key2Value;
